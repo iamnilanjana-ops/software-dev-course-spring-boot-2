@@ -1,0 +1,25 @@
+package com.example.mycollections.models;
+
+public class Album extends LibraryItem {
+    private String artist;
+    private int tracks;
+
+    public Album(String name, String artist, int year, int tracks) {
+        super(name, year);
+        this.artist = artist;
+        this.tracks = tracks;
+    }
+
+    public String getArtist() {
+        return artist;
+    }
+
+    public int getTracks() {
+        return tracks;
+    }
+
+    @Override
+    public String toString() {
+        return name + " by " + artist;
+    }
+}
