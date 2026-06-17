@@ -11,11 +11,11 @@ import java.util.List;
 public class AlbumController {
 
     private final List<Album> albums = new ArrayList<>() {{
-        add(new Album("Thriller", "Michael Jackson", 1982, 9));
-        add(new Album("Abbey Road", "The Beatles", 1969, 17));
-        add(new Album("Rumours", "Fleetwood Mac", 1977, 11));
-    }};
 
+        add(new Album("Aashiqui 2", "Arijit Singh", 2013, 11));
+        add(new Album("Bhalobeshe Sakhi", "Rabindranath Tagore", 1910, 12));
+        add(new Album("Kabir Singh", "Mithoon", 2019, 9));
+    }};
     @GetMapping("/json")
     public List<Album> getAlbumsJson() {
         return albums;

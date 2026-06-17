@@ -11,11 +11,12 @@ import java.util.List;
 public class MovieController {
 
     private final List<Movie> movies = new ArrayList<>() {{
-        add(new Movie("The Godfather", "Francis Ford Coppola", 1972, 175));
-        add(new Movie("Titanic", "James Cameron", 1997, 195));
-        add(new Movie("Inception", "Christopher Nolan", 2010, 148));
-    }};
 
+        add(new Movie("Dhurandhar", "Aditya Dhar", 2025, 214));
+        add(new Movie("Goopy Gyne Bagha Byne", "Satyajit Ray", 1969, 132));
+        add(new Movie("Sholay", "Ramesh Sippy", 1975, 204));
+
+    }};
     @GetMapping("/json")
     public List<Movie> getMoviesJson() {
         return movies;
